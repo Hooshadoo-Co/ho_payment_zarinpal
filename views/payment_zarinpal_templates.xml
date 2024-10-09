@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="redirect_form">
+        <!-- Zarinpal generates a unique URL for each payment request -->
+        <form t-att-action="api_url" method="post">
+            <input type="hidden" name="provider_id" t-att-value="provider_id"/>
+            <input type="hidden" name="merchant_id" t-att-value="merchant_id"/>
+            <input type="hidden" name="amount" t-att-value="amount"/>
+            <input type="hidden" name="description" t-att-value="description"/>
+            <input type="hidden" name="callback_url" t-att-value="callback_url"/>
+            <input type="hidden" name="order_id" t-att-value="order_id"/>
+        </form>
+    </template>
+</odoo>

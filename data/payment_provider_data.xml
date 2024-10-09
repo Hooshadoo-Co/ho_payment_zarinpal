@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="payment_provider_zarinpal" model="payment.provider">
+        <field name="name">Zarinpal</field>
+        <field name="code">zarinpal</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+        <field name="image_128" type="base64" file="ho_payment_zarinpal/static/description/icon.png"/>
+        <field name="module_id" ref="base.module_ho_payment_zarinpal"/>
+        <field name="payment_method_ids"
+               eval="[Command.set([
+                         ref('ho_payment_zarinpal.payment_method_zarinpal'),
+                     ])]"
+        />
+    </record>
+</odoo>
