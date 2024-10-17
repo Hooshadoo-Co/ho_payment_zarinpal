@@ -15,11 +15,11 @@ submission provided by the `payment` module.
 - Webhook notifications
 
 ## Configuration
-1. Go to the **Website menu** in the site management section.
-2. Select the **Payment Providers** option from the **Configuration menu** and **eCommerce section**.
-3. Open **Zarinpal** provider.
-4. Change the **state** of the payment provider to **Enabled**.
-5. In the **Credentials tab**, set the following fields based on the information provided by Zarinpal.
+1. First, go to the **Apps menu** and install the **Payment Provider: Zarinpal** module with the technical name **ho_payment_zarinpal**.
+2. Next, go to the **Website menu** in the site management section.
+3. Then, select the **Payment Providers** option from the **Configuration menu** and **eCommerce section**.
+4. Open **Zarinpal** provider.
+5. Change the **state** of the payment provider to **Enabled**.
+6. In the **Credentials tab**, set the following fields based on the information provided by Zarinpal.
     - zarinpal_merchant_id: Zarinpan Merchant ID
-6. In the **Configuration tab**, then the **Payment Form section** and then the **Payment Methods**, select **Enable Payment Methods link** and activate the **Zarinpal payment method** on the opened page.
-7. Publish it for display on the website.
+7. Save payment providers configuration.

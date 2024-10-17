@@ -17,12 +17,14 @@ class ZarinpalController(http.Controller):
         save_session=False
     )
     def zarinpal_authority(self, **data):
+        
         provider_id = int(data.pop('provider_id'))
         provider_sudo = request.env['payment.provider'].sudo().browse(provider_id)
         
         data['amount']=int(data['amount'])
 
         response = provider_sudo._zarinpal_make_request(data)
+        
         response_data = response.get('data')
         code = response_data.get('code')
         authority = response_data.get('authority')
