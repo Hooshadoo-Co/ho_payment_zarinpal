@@ -6,13 +6,13 @@ SUPPORTED_LOCALES = [
 # Currency codes in ISO 4217 format supported by mollie.
 # Note: support varies per payment method.
 SUPPORTED_CURRENCIES = [
-    'IRR',
+    # 'IRR',
 ]
 
 # The codes of the payment methods to activate when Zarinpal is activated.
 DEFAULT_PAYMENT_METHODS_CODES = [
     # Primary payment methods.
-    'card',
+    'zarinpal',
 ]
 
 # Mapping of payment method codes to Zarinpal codes.

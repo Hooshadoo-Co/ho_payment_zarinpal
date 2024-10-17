@@ -7,7 +7,7 @@
     'sequence': 351,
     'summary': "Zarinpal payment provider for IRAN.",
     'description': " ",  # Non-empty string to avoid loading the README file.
-    'author': 'hooshadoo',
+    'author': 'Hooshadoo',
     'website': 'https://www.hooshadoo.com/',
     'depends': ['payment'],
     'data': [
